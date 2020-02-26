@@ -1,6 +1,6 @@
 {
-  "name": "redux-form",
-  "version": "8.3.0",
+  "name": "redux-form-no-immutable",
+  "version": "8.3.1",
   "description": "A higher order component decorator for forms using Redux and React",
   "main": "./lib/index.js",
   "module": "./es/index.js",
@@ -9,7 +9,7 @@
   "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/redux-form/redux-form"
+    "url": "https://github.com/DavidOrchard/redux-form-no-immutable"
   },
   "scripts": {
     "analyze": "webpack src/index.js dist/redux-form.js -p --bail --profile --json > stats.json && webpack-bundle-analyzer stats.json",
@@ -118,12 +118,10 @@
     "webpack-cli": "^3.3.10"
   },
   "peerDependencies": {
+    "immutable": "*",
     "react": "^16.4.0",
     "react-redux": "^6.0.0 || ^7.0.0",
     "redux": "^3.0.0 || ^4.0.0"
-  },
-  "optionalDependencies": {
-    "immutable": "*"
   },
   "files": [
     "README.md",
